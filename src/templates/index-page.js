@@ -131,12 +131,14 @@ const IndexPage = ({ data }) => {
 
   return (
     <div className="container_fullscreen container--bgcolor">
-      <h1>
-        Whaouu, tu as gagnée un ticket cadeau pour gouter les 10 meilleurs
+      <h1 className="container_title">
+        Whaouu, tu as gagné un ticket cadeau pour gouter les 10 meilleurs
         croissants de LYON !{" "}
       </h1>
-      <h2>(Le blog arrivera bientot)</h2>
+      <h2 className="container_pssst">(Le blog arrivera bientot)</h2>
       <img
+        className="container_img"
+        alt="nicolecroissant"
         src={
           !!frontmatter.image.childImageSharp
             ? frontmatter.image.childImageSharp.fluid.src
